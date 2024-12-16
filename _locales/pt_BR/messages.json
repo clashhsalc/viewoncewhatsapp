@@ -1,0 +1,20 @@
+{
+   "description": {
+      "message": "Abra mídias de visualização única no navegador."
+   },
+   "buy_sub": {
+	   "message": "Assinar"
+   },
+   "cancel_sub": {
+	   "message": "Cancelar"
+   },
+   "active_sub": {
+	   "message": "Assinatura Ativada para o número:"
+   },
+   "inactive_sub": {
+	   "message": "Assinatura Inativa para o número:"
+   },
+   "please": {
+	   "message": "Por favor, abra o Whatsapp Web..."
+   }
+}

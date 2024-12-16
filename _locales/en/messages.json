@@ -1,0 +1,20 @@
+{
+   "description": {
+      "message": "Open view once media in the browser."
+   },
+   "buy_sub": {
+	   "message": ""
+   },
+   "cancel_sub": {
+	   "message": ""
+   },
+   "active_sub": {
+	   "message": "Active subscription for number:"
+   },
+   "inactive_sub": {
+	   "message": "Inactive subscription for number:"
+   },
+   "please": {
+	   "message": "Please open Whatsapp Web"
+   }
+}

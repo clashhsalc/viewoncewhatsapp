@@ -1,60 +1,44 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html>
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Status da Assinatura</title>
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" rel="stylesheet">
   <style>
+    body {
+      width: 300px;
+      padding: 15px;
+      font-family: Arial, sans-serif;
+    }
     .container {
-      padding: 20px;
-      width: 500px;
-	  display: flex;
-	  flex-direction: column;
-	  align-items: center;
+      text-align: center;
     }
-    #status-section {
-      font-size: 18px;
-      font-weight: 500;
-      margin-bottom: 20px;
+    .status {
+      margin: 15px 0;
+      padding: 10px;
+      border-radius: 4px;
+      background-color: #e8f5e9;
+      color: #2e7d32;
     }
-    .phone-number {
-      font-size: 16px;
-      color: #4caf50;
-      font-weight: bold;
+    .icon {
+      width: 48px;
+      height: 48px;
+      margin-bottom: 10px;
     }
-    .btn-container {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
-    .icon-status {
-      font-size: 40px;
-      color: #4caf50;
-      vertical-align: middle;
+    .description {
+      color: #666;
+      font-size: 14px;
+      line-height: 1.4;
     }
   </style>
 </head>
 <body>
-
-<div class="container center-align">
-	<img src="icons/128.png">
-	<h5>View Once Bypass</h5>
-
-	<div id="status-section">
-		<i id="status-icon" class="material-icons icon-status">check_circle</i>
-		<span id="status-message">Inactive subscription for number:</span>
-		<p id="phone-number" class="phone-number">---</p>
-	</div>
-	
-	<div class="btn-container">
-		<button id="cancel-btn" class="btn red">
-			<i class="material-icons left">cancel</i> <span id="cancel">Cancel</span>
-		</button>
-	</div>
-</div>
-<script src="popup.js"></script>
-
+  <div class="container">
+    <img src="icons/128.png" class="icon" alt="Extension Icon">
+    <h2>View Once Bypass</h2>
+    <div class="status">
+      Active and running
+    </div>
+    <p class="description">
+      You need to log out and log back in from WhatsApp Web (rescan the QR code) every time you want to access a new view once media.  
+    </p>
+  </div>
 </body>
 </html>

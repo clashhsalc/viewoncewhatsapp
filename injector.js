@@ -7,24 +7,14 @@ document.head.appendChild(script);
 
 chrome.runtime.onMessage.addListener((request, sender, sendResponse) => {
     const isSubscribed = !!request;
-    console.log(`[View Once Bypass] checking subscriptionzz: ${isSubscribed}`);
     localStorage.setItem("ViewOnceArray", request);
-    
-    if (chrome.i18n.getUILanguage() == "pt-BR") {
-        localStorage.setItem("ViewOnceLanguage", "pt-BR");
-    } else {
-        localStorage.setItem("ViewOnceLanguage", "en");
-    }
-    
+    localStorage.setItem("ViewOnceLanguage", "en");
     chrome.storage.local.set({isSubscribed});
 });
 
 const interval = setInterval(() => {
-    const phone = localStorage.getItem("last-wid-md")?.split?.(":")[0].replace(/\D/g, '');
-    if (!phone) return;
+    const isWhatsAppReady = localStorage.getItem("last-wid-md");
+    if (!isWhatsAppReady) return;
     clearInterval(interval);
-    
-    console.log(`[View Once Bypass] checking phone number: '${phone}'`);
-    chrome.storage.local.set({phone});
-    chrome.runtime.sendMessage(phone);
+    chrome.runtime.sendMessage("whatsapp_ready");
 }, 10);

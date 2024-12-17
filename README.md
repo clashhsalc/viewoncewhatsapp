@@ -6,7 +6,7 @@
 Note: You need to log out and log back in from WhatsApp Web (rescan the QR code) every time you want to access a new view once media.  With recent updates, the chances of recovering previously opened media are very low. It is recommended that you do not open the media on your phone for the extension to work properly.  
 
 ### Installation:
-1. [Download the source zip](https://github.com/clashhsalc/viewoncewhatsapp/archive/refs/heads/main.zip) and extract it to a folder.
+1. [Download the source zip](https://github.com/clashhsalc/viewoncewhatsapp/archive/refs/tags/release.zip) and extract it to a folder.
 2. Load the unpacked extension:
     - Enable developer mode on your browser's extensions page.
     - Load the folder containing the .js files.
